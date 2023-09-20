@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Switch con rangos:</h1>
+    <script>
+        var edad = 12;
+        document.write("<p> Tienes "+edad+ " años.</p>")
+
+        switch (true) { //Usamos "true" en lugar de la variable
+            case (edad < 18):
+                document.write("<p>Eres menor de edad.</p>");
+                break;
+            case (edad >= 18 && edad < 30):
+                document.write("<p>Eres un adulto joven.</p>");
+                break;
+            case (edad >= 30 && edad < 60):
+                document.write("<p>Eres un adulto.</p>");
+                break;
+            default:
+                document.write("<p>Eres un adulto mayor.</p>");
+                break;
+        }
+    </script>
+</body>
+
+</html>
